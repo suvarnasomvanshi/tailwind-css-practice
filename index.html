@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          colors: {
+            metal: "#4646756",
+            red: "#65456356465",
+            pink: "#ffff",
+          },
+          extend: {
+            screens: {
+              xs: { min: "320px", max: 
+              "567px" },
+            },
+            colors: {
+              wscolor1: "#da373d",
+              metal: "#4646756",
+              red: "#65456356465",
+              pink: "#ffff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="text-3xl xs:text-center sm:text-center lg:text-center lg:py-5 text-center 10 wscolor1">
+      Hello world!
+    </h1>
+    <h1 class="text-[red]">sbfdhkskf</h1>
+    <h1 class="text-metal">sbfdhkskf</h1>
+    <div class="container mx-auto text-red-900"></div>
+
+
+    <!-- grid -->
+  <div class="max-w-[1200px] bg-metal text-white 
+  mx-auto 
+  grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2gap-5">
+     <div class="bg-green text-white py-5 text-center "">hello</div>   
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+     <div class="bg-green text-white py-5 text-center "">hello</div>
+ </div>
+
+
+
+<!-- col-span- :  give specific width to single div inside grid div 
+col-span-4 
+col-start-1 col-end-3
+lg:col-span-2 max-w-[400px]
+-->
+ <div class="max-w-[1200px] bg-metal text-white 
+ mx-auto 
+ grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2gap-5 ">
+    <div class="col-start-1 col-end-3 bg-green text-white py-5 text-center "">hello</div>   
+    <div class="col-span-4 bg-green text-white py-5 text-center "">hello</div>
+    <div class="col-span-1 bg-green text-white py-5 text-center "">hello</div>
+    <div class="bg-green text-white py-5 text-center "">hello</div>
+    <div class="bg-green text-white py-5 text-center "">hello</div>
+    <div class="bg-green text-white py-5 text-center "">hello</div>
+    <div class="bg-green text-white py-5 text-center "">hello</div>
+</div>
+
+
+<!-- grid-template-rows -> vertical alignment    // fullwidth grid-rows-12   row-by-row: grid-flow-col-->
+<div class="max-w-[1320px] mx-auto grid grid-rows-4 grid-flow-col ">
+ <div>edhfdshui</div>
+ <div>edhfdshui</div>
+ <div>edhfdshui</div>
+ <div>edhfdshui</div>
+ <div>edhfdshui</div>
+</div>
+
+<!-- height to specific div in bet grid div -->
+
+<div class="max-w-[1320px] mx-auto grid grid-rows-4 grid-flow-col ">
+    <div class="row-span-2">edhfdshui</div>
+    <div>edhfdshui</div>
+    <div>edhfdshui</div>
+    <div>edhfdshui</div>
+    <div>edhfdshui</div>
+</div>
+
+
+
+<!-- padding  : p, pt,pb,  pl,pr,  py,px ,etc -->
+<div class="max-w-[1320px] mx-auto md:py-[70px]"></div>
+
+<!-- margin : m, mt,mb, ml,mr,  my,mx, mx-auto mt-[50px]-->
+
+
+
+<!-- tailwind css card layout-->
+
+<div class="max-w-[1320px] mx-auto">
+    <h1 class="text-2xl text-center py-5">product card layout</h1>
+
+    <div class="max-w-[1320px] mx-auto grid lg:grid-col-4 md:grid-col-2 gap-5 px-[20px] shadow-lg rounded">
+       <div class="overflow-hidden">
+        <img src="ghcfh" alt="img" class="hover:scale-125 duration-2000"/>
+       </div>
+        <h3 class="py-2 text-2xl">product name</h3>
+    </div>
+    <div class="max-w-[1320px] mx-auto grid lg:grid-col-4 md:grid-col-2 gap-5 px-[20px] shadow-lg rounded">
+        <div class="overflow-hidden">
+         <img src="ghcfh" alt="img" class="hover:scale-125 duration-2000"/>
+        </div>
+         <h3 class="py-2 text-2xl">product name</h3>
+     </div>
+     <div class="max-w-[1320px] mx-auto grid lg:grid-col-4 md:grid-col-2 gap-5 px-[20px] shadow-lg rounded">
+        <div class="overflow-hidden">
+         <img src="ghcfh" alt="img" class="hover:scale-125 duration-2000"/>
+        </div>
+         <h3 class="py-2 text-2xl">product name</h3>
+     </div>
+     <div class="max-w-[1320px] mx-auto grid lg:grid-col-4 md:grid-col-2 gap-5 px-[20px] shadow-lg rounded">
+        <div class="overflow-hidden">
+         <img src="ghcfh" alt="img" class="hover:scale-125 duration-2000"/>
+        </div>
+         <h3 class="py-2 text-2xl">product name</h3>
+     </div>
+  
+</div>
+
+
+
+<!-- our services section -->
+<div class="max-w-[1320px] mx-auto md:py-[80] py-5">
+ <h1>our services</h1>
+ <div class="max-w-[1320px] mx-auto py-[50px] grid lg:grid-cols-4 sm:grid-cols-2 gap-5">
+    
+  <div class="shadow-lg p-5 text-center ">
+      <h3 class="text-xl py-2">ame</h3>
+      <p>deeeeeeeffffffffffff d jkdfieryfiewdius jhgerhfwedshcflidyf dmnckjedjfiweoudsljdxhs efheriewduisfuietewwsdxbsfu</p>
+    </div>
+ </div>
+ <div class="shadow-lg p-5 text-center">
+  <h3 class="text-xl py-2">ame</h3>
+  <p>deeeeeeeffffffffffff d jkdfieryfiewdius jhgerhfwedshcflidyf dmnckjedjfiweoudsljdxhs efheriewduisfuietewwsdxbsfu</p>
+</div>
+</div>
+<div class="shadow-lg p-5 text-center">
+  <h3 class="text-xl py-2">ame</h3>
+  <p>deeeeeeeffffffffffff d jkdfieryfiewdius jhgerhfwedshcflidyf dmnckjedjfiweoudsljdxhs efheriewduisfuietewwsdxbsfu</p>
+</div>
+</div>
+<div class="shadow-lg p-5 text-center">
+  <h3 class="text-xl py-2">ame</h3>
+  <p>deeeeeeeffffffffffff d jkdfieryfiewdius jhgerhfwedshcflidyf dmnckjedjfiweoudsljdxhs efheriewduisfuietewwsdxbsfu</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- half-img & half-text -->
+<div class="max-w-[1320px] md:py-[80] py-5 flex sm:flex-row flex-column">
+<div class="basis-[45%] px-5">
+  <img src="httghtyftygvfjfiyytfgfyyt" alt="img" class="w-full"/>
+</div>
+<div class="basais-[55%] px-5">
+  <h1 class="text-3xl pb-5">gggggdhd </h1>
+</div>
+</div>
+
+
+
+<div class="w-[100%] h-[100vh] bg-[url('path')] bg-center bg-cover bg-[rgba(0,0,0,00.5)]">
+ 
+</div>
+
+<div class="grid sm:grid-cols-2 grid-cols-[30%_auto]">
+
+</div>
+
+
+  </body>
+</html>
+
